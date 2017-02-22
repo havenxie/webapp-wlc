@@ -1,0 +1,593 @@
+/**
+ * è¿™é‡Œæ˜¯æˆ‘ä»¬è‡ªå·±å®šä¹‰çš„æ ·å¼
+ */
+
+/** 
+ * bootstropæ‰©å±•
+ */
+.btn-myself {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+.btn-myself:hover, .btn-myself:focus, .btn-myself:active, .btn-myself.active, .open .dropdown-toggle.btn-myself {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}  
+.btn-myself:active, .btn-myself.active, .open .dropdown-toggle.btn-myself {
+    background-image: none;
+}
+.btn-myself.disabled, .btn-myself[disabled], fieldset[disabled] .btn-myself, .btn-myself.disabled:hover, .btn-myself[disabled]:hover, fieldset[disabled] .btn-myself:hover, .btn-myself.disabled:focus, .btn-myself[disabled]:focus, fieldset[disabled] .btn-myself:focus, .btn-myself.disabled:active, .btn-myself[disabled]:active, fieldset[disabled] .btn-myself:active, .btn-myself.disabled.active, .btn-myself[disabled].active, fieldset[disabled] .btn-myself.active {
+    background-color: #E92322;
+    border-color: #DB3B43;
+}.btn-myself .badge {
+    color: #E92322;
+    background-color: #ffffff;
+}
+.navbar-myself {
+    background-color: #fff;
+    border-color: #f5f5f5;
+    top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+.navbar-myself .navbar-brand {
+    color: #777;
+}
+.navbar-myself .navbar-brand:hover, .navbar-myself .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-myself .navbar-text {
+    color: #777;
+}
+.navbar-myself .navbar-nav > li > a {
+    color: #777;
+    line-height: 50px;
+    font-size: 14px;
+}
+.navbar-myself .navbar-nav > li > a:hover, .navbar-myself .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-myself .navbar-nav > .active > a, .navbar-myself .navbar-nav > .active > a:hover, .navbar-myself .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-myself .navbar-nav > .disabled > a, .navbar-myself .navbar-nav > .disabled > a:hover, .navbar-myself .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-myself .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.navbar-myself .navbar-toggle:hover, .navbar-myself .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-myself .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-myself .navbar-collapse, .navbar-myself .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-myself .navbar-nav > .open > a, .navbar-myself .navbar-nav > .open > a:hover, .navbar-myself .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width:767px) {
+    .navbar-myself .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-myself .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-myself .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-myself .navbar-nav .open .dropdown-menu > .active > a, .navbar-myself .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-myself .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-myself .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-myself .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-myself .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-myself .navbar-link {
+    color: #777;
+}
+.navbar-myself .navbar-link:hover {
+    color: #333;
+}
+.navbar-myself .btn-link {
+    color: #777;
+}
+.navbar-myself .btn-link:hover, .navbar-myself .btn-link:focus {
+    color: #333;
+}
+.navbar-myself .btn-link[disabled]:hover, fieldset[disabled] .navbar-myself .btn-link:hover, .navbar-myself .btn-link[disabled]:focus, fieldset[disabled] .navbar-myself .btn-link:focus {
+    color: #ccc;
+}
+.panel-myself {
+    border-radius: 0;
+    border: 0;
+    box-shadow: 1px 1px 5px #ccc;
+}
+.panel-myself.actived {
+    background-color: #e92322;
+    color: #fff;
+    position: relative;
+}
+.panel-myself.actived::before {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    content: "\e915";
+    font-family: myself;
+    font-size: 50px;    /*注意啦 这里的类并没有添加icon-因此找不到字体，解决办法是加上icon-或者添加字体myself*/
+}
+.panel-myself.disabled {
+    background-color: #ececec;
+}
+.panel-myself.default {
+    color: #333;
+}
+.panel-myself > .panel-heading {
+    float: right;
+    width: 120px;
+    height: 150px;
+    padding: 0;
+    padding-top: 40px;
+    border-left: 1px dashed #c0c0c0;
+    text-align: center;
+    position: relative;
+}
+.panel-myself > .panel-heading strong {
+    font-size: 26px;
+}
+.panel-myself > .panel-heading > .tooltips {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.panel-myself > .panel-heading::before, .panel-myself > .panel-heading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    position: absolute;
+}
+.panel-myself > .panel-heading::before {
+    top: -8px;
+    left: -8px;
+}
+.panel-myself > .panel-heading::after {
+    left: -8px;
+    top: 140px;
+    box-shadow: 1px 2px 2px #ccc inset;
+}
+.panel-myself > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-myself > .panel-heading .badge {
+    //徽章
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 2px;
+}
+.panel-myself > .panel-heading .badge-one {
+    color: #e92322;
+    border-color: #e92322;
+}
+.panel-myself > .panel-heading .badge-two {
+    color: #399;
+    border-color: #399;
+}
+.panel-myself > .panel-body {
+    margin-right: 120px;
+    height: 150px;
+    padding: 0;
+}
+.panel-myself > .panel-body > .row {
+    margin: 0;
+}
+.panel-myself > .panel-body > .row > div {
+    margin-bottom: 10px;
+}
+.panel-myself > .panel-body p {
+    margin-bottom: 0;
+}
+.panel-myself > .panel-body > h5 {
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+/**
+ * å…¬å…±çº§åˆ«çš„æ ·å¼
+ */
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+@font-face {
+    font-family: 'myself';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+/*é€šé…é€‰æ‹©å™¨ æ‰¾åˆ°æ‰€æœ‰ä»¥icon-å¼€å¤´çš„ç±»class*/
+
+/**
+ * 匹配所有的icon-的类名 给他们添加字体
+ */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'myself';
+    font-style: normal;
+}
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+.icon-logo::before {
+    content: "\e93e";
+}
+.icon-icon::before {
+    content: "\e920";
+}
+
+/** 
+ * å¤´éƒ¨åŒºåŸŸ
+ */
+
+/*ç›´æŽ¥å­ä»£é€‰æ‹©å™¨*/
+#header > .topbar {
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 40px;
+}
+#header > .topbar > .container > .row > div {
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+#header > .topbar > .container > .row > div + div {
+    border-left: 1px solid #c0c0c0;
+}
+#header a {
+    color: #888;
+}
+#header a:hover {
+    text-decoration: none;
+}
+#header .btn-myself {
+    color: #fff;
+}
+#header .moible-link {
+    font-size: 12px;
+    color: #888;
+}
+#header .moible-link > img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 28px;
+    z-index: 1001;
+}
+#header .moible-link:hover > img {
+    display: block;
+}
+#header .icon-icon {
+    font-size: 50px;
+    color: #e92322;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#header .icon-logo {
+    font-size: 32px;
+    color: #333;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#header .navbar-myself {
+    line-height: 80px;
+    margin-bottom: 0;
+}
+
+/** 
+ * å¤´éƒ¨åŒºåŸŸç»“æŸ
+ */
+
+/** 
+ * main_ad
+ * 
+ */
+#main_ad {
+}
+#main_ad > .carousel-inner > .item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;/*æŒ‰ç…§è¾ƒå°è¾¹æ‰©å±•åˆ°å¤–é¢å®¹å™¨ è¿™æ˜¯ä¸€ä¸ªC3çš„å±žæ€§*/
+    background-size: cover;
+}
+@media (min-width:768px) {
+    #main_ad > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+#main_ad > .carousel-inner > .item > img {
+    width: 100%;
+}
+
+/**
+ * ç½‘ç«™ç‰¹è‰²
+ */
+#tese {
+    padding: 50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#tese i {
+    font-size: 34px;
+}
+#tese .icon-uniE907::before {
+    content: '\e907';
+}
+#tese .icon-uniE908::before {
+    content: '\e908';
+}
+#tese .icon-uniE909::before {
+    content: '\e909';
+}
+#tese .icon-uniE910::before {
+    content: '\e910';
+}
+#tese .icon-uniE911::before {
+    content: '\e911';
+}
+#tese .icon-uniE912::before {
+    content: '\e912';
+}
+#tese > .container > .row > div {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#tese > .container > .row > div a {
+    text-decoration: none;
+    color: #888;
+}
+
+/**
+ * ç«‹å³é¢„çº¦
+ */
+#ljyy {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 20px 0;
+}
+#ljyy .icon-uniE906::before {
+    content: '\e906';
+}
+#ljyy .icon-uniE905::before {
+    content: '\e905';
+}
+#ljyy > .container > p {
+
+    /*line-height: 50px; è¿™æ ·çš„è¯å½“å±å¹•ç¼©å°æ—¶æ–‡å­—ä¼šæ¢è¡Œè¿™æ ·ä¼šå‡ºçŽ°é—®é¢˜ï¼Œ
+    å› æ­¤ä¸è®¾ç½®è¡Œé«˜ åªè®¾ç½®å¤–é¢çš„å¤§ç›’å­å†…è¾¹è·
+    bootstrapé‡Œé¢é»˜è®¤på…ƒç´ ä¼šæœ‰ä¸€ä¸ªmargin-bottom: 10px å› æ­¤è¿™é‡Œæœ€å¥½æ¸…é™¤*/
+    font-size: 16px;
+    margin-bottom: 0;
+}
+#ljyy > .container > .pull-left > span, #ljyy > .container > .pull-left > a {
+    color: #e92322;
+}
+#ljyy > .container > .pull-right >a {
+    color: #888;
+}
+#ljyy > .container > .pull-left > a {
+    border-bottom: 1px dashed #e92322;/*dashedæ˜¯ç‚¹çº¿çš„æ„æ€ å’ŒKonvaé‡Œçš„é‚£ä¸ªç‚¹çº¿ä¸€æ · dashed: [10, 3]*/
+}
+#ljyy > .container a:hover {
+    text-decoration: none;
+}
+
+/**
+ * äº§å“æŽ¨è
+ */
+#products {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+#products > .container > .ul-wapper {
+    // overflow: hidden;
+    overflow-x: scroll;
+    //横向的溢出滚动
+}
+#products > .container > .ul-wapper > .nav-tabs > li {
+    padding-left: 20px;
+}
+#products > .container > .ul-wapper > .nav-tabs > li > a {
+    color: #333;
+    font-size: 16px;
+}
+#products > .container > .ul-wapper > .nav-tabs > li.active > a {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 4px solid #e92322;
+}
+#products > .container > .ul-wapper > .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    color: #000;
+}
+#products > .container > .tab-content {
+    padding: 20px 0;
+}
+
+/**
+ *
+ * 新闻版块
+ */
+#news {
+    padding-top: 50px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#news .news-title {
+    padding: 20px 0;
+    border-bottom: 1px dashed #c0c0c0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+#news .news-title::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: -10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+.icon-news01::before {
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+.icon-news02::before {
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+.icon-news03::before {
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+.icon-news04::before {
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+#news > .container > .row > .col-md-1 li {
+    text-align: center;
+}
+.nav-pills > li > a {
+    width: 60px;
+    border-radius: 30px;
+    text-align: center;
+}
+@media (max-width:768px) {
+    #news .nav > li {
+        float: left;
+        margin-right: 35px;
+    }
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: red;
+}
+
+/**
+ * 合作伙伴
+ */
+#hzhb {
+    padding-top: 30px 0;
+}
+.icon-uniE930:hover {
+    color: #df3232;
+}
+.icon-uniE930::before {
+    content: "\e946";
+}
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+.icon-uniE92F::before {
+    content: "\e92f";
+}
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+.icon-uniE92E::before {
+    content: "\e92e";
+}
+.icon-uniE92A:hover {
+    color: #ed6f00;
+}
+.icon-uniE92A::before {
+    content: "\e92a";
+}
+.icon-uniE929:hover {
+    color: #ed6f00;
+}
+.icon-uniE929::before {
+    content: "\e929";
+}
+.icon-uniE931:hover {
+    color: #ed6f00;
+}
+.icon-uniE931::before {
+    content: "\e931";
+}
+.icon-uniE92C:hover {
+    color: #ed6f00;
+}
+.icon-uniE92C::before {
+    content: "\e92c";
+}
+.icon-uniE92B:hover {
+    color: #ed6f00;
+}
+.icon-uniE92B::before {
+    content: "\e92b";
+}
+.icon-uniE92D:hover {
+    color: #ed6f00;
+}
+.icon-uniE92D::before {
+    content: "\e92d";
+}
+#hzhb > .container > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 818px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#hzhb > .container > ul > li {
+    float: left;
+}
+#hzhb > .container > ul > li + li {
+
+    /*兄弟选择器 这样的话除了第一项其他的项都会被选择到*/
+    border-left: 1px dashed #e0e0e0;
+}
+#hzhb > .container > ul > li > a {
+    padding: 10px 20px;
+    font-size: 50px;
+    color: #888;
+}
+#hzhb > .container > ul > li > a:hover {
+    text-decoration: none;
+}
+
+/**
+ * è„šæ³¨åŒºåŸŸ
+ */
+#footer {
+    height: 200px;
+}
