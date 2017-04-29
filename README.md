@@ -709,3 +709,8 @@ if (isSmallScreen) {
 
 ## 14.version 4
 http://www.cnblogs.com/micua/p/bootstrap-version4-alpha.html
+
+
+## 许可
+
+[MIT](./LICENSE) &copy; [havenxie](http://github.com/havenxie)
