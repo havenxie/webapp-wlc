@@ -1,5 +1,5 @@
 # Bootstrap项目实战
-> demo页面：https://havenxie.github.io/Bootstrap_Demo/
+> demo页面：https://havenxie.github.io/webapp-wlc/
 
 ## 1. 搭建Bootstrap页面骨架及项目目录结构
 
